@@ -16,6 +16,10 @@ Start with the product, audience, and primary user task. Infer these from the br
 
 For an existing product, inspect the relevant screen, shared components, and design tokens before proposing changes. Preserve its conventions and working interactions within the requested scope. Put the distinctive idea into the composition, content, or focal element; introduce new tokens or dependencies only when the design needs them.
 
+## When the user supplies a reference
+
+For a faithful implementation, treat the supplied design as the source for layout, hierarchy, and visual details. Inspect the reference and existing assets before editing. Compare the rendered result at the reference viewport; resolve differences in placement, type, spacing, and color before adapting to other sizes. If only one viewport is supplied, infer responsive behavior from content priority and document consequential assumptions. For an inspiration reference, identify the qualities to borrow and adapt them to the new subject.
+
 ## Design principles
 
 For a landing page, lead with the most characteristic thing in the subject's world, in the form that is most appropriate: a headline, an image, an animation, a live demo, an interactive moment, or other treatments. Be deliberate with your choice: a big number with a small label, supporting stats, and a gradient accent is the default treatment, so only use it if that's truly the best option.
@@ -56,7 +60,15 @@ Check the direction against the brief: which choice would change if the audience
 
 Keep the depth of interaction aligned with the requested deliverable. In a prototype, label simulated data or actions when a viewer could mistake them for live behavior. In a working interface, connect the primary flow to the existing state or service and preserve its validation. Use real provided content and avoid invented customer claims, metrics, or testimonials.
 
+## Assets and delivery
+
+Use provided or project-owned assets first. When an asset is missing, choose a replacement by its role in the composition and keep its aspect ratio and crop intentional across widths. Reserve layout space for media, provide appropriate alternative text, and avoid making the initial view depend on a large decorative download. Give custom fonts a compatible fallback and verify that important labels still fit when it is used.
+
+## Verify the experience
+
 After building, review representative mobile and desktop widths in a browser when available. Look for clipping, overflow, weak hierarchy, and obstructed actions. Exercise the primary interaction with keyboard and pointer; check focus visibility, text contrast, and reduced motion. For data-driven or interactive screens, exercise applicable loading, empty, error, and success states. Fix observed problems within scope and report any checks you could not run.
+
+Resize through layout transitions instead of checking endpoints only. Use realistic long labels and a populated state; check that sticky controls do not hide focused elements or cover content. For forms, verify that validation is associated with its field and that a failed submission keeps the user's input. For dialogs, verify keyboard dismissal and focus return when applicable. When browser verification is available, capture before/after views at matching widths for a redesign and compare the changed region.
 
 Use two quick scope checks before finishing:
 - **Existing settings screen, add a notification toggle:** reuse the form primitives, keep the existing save behavior, and check label association, keyboard operation, and failed save feedback. The visual direction stays anchored to the current screen.

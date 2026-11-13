@@ -11,3 +11,5 @@ A skill adapta o planejamento ao tamanho da mudança, preserva os padrões exist
 ## Origem e licença
 
 O arquivo `SKILL.md` foi modificado a partir do trabalho da Anthropic. A adaptação preserva a licença Apache 2.0 em [LICENSE.txt](LICENSE.txt). Este projeto é mantido de forma independente.
+
+Na v1.1.0, a skill passou a distinguir referências de reprodução fiel de referências de inspiração. A revisão também cobre transições entre larguras, texto longo, foco em diálogos, recuperação de erros em formulários e comportamento com fontes alternativas.
